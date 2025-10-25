@@ -50,6 +50,22 @@
   font-weight: 600;
 }
 
+/* Social Icons */
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ffd699; /* lighter orange on hover */
+}
+
 .footer-bottom {
   margin-top: 30px;
   border-top: 1px solid #ffd699;
@@ -63,5 +79,15 @@
 @media (max-width: 768px) {
   .footer-inner {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-social a {
+    margin-right: 10px;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 8px;
   }
 }
