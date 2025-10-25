@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../styles/OrderPage.css";
 
-import idliSambarImg from "../assets/order/IdliSambar.png";
+import idliSambarImg from "../assets/order/idliSambar.png";
 import dosaImg from "../assets/order/Dosa.png";
 import vadaImg from "../assets/order/Vada.png";
 import vegNoodlesImg from "../assets/order/VegNoodles.png";
