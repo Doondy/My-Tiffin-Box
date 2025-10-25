@@ -1,0 +1,79 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+  width: 100%;
+  background-color: #ff6600; /* Professional orange */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual link styling */
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-links a:hover {
+  color: #ffd699; /* lighter orange for hover */
+  transform: scale(1.05);
+}
+
+/* Button style (optional) */
+.navbar-button {
+  background-color: white;
+  color: #ff6600;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #ffd699;
+  color: #ff6600;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-button {
+    width: 100%;
+  }
+}

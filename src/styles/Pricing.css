@@ -1,0 +1,122 @@
+/* Full-screen sections */
+section {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+  width: 100%;
+}
+
+/* Grid layouts for menu, pricing, order */
+.menu-grid,
+.pricing-cards,
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards styling */
+.card, .order-item-card, .menu-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card:hover, .order-item-card:hover, .menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Headings inside cards */
+.card h3, .order-item-card h4 {
+  color: #ff6600;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Paragraph inside cards */
+.card p, .order-item-card p {
+  color: #555;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+/* Buttons inside cards */
+.card button, .order-item-card button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff6600;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover, .order-item-card button:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+}
+
+/* Selected plan box */
+.selected-plan {
+  border: 2px solid #ffcc80;
+  background-color: #fff3e0;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Cart button container */
+.cart-button-container {
+  margin-top: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Full-screen layout enhancements */
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: #ff6600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu-grid,
+  .pricing-cards,
+  .item-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .selected-plan {
+    width: 90%;
+    padding: 1.2rem;
+  }
+}

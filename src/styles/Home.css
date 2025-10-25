@@ -1,0 +1,105 @@
+.home {
+  background: linear-gradient(90deg, #fff3e0, #ffe0b2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Text Section */
+.text-section {
+  flex: 1;
+}
+
+.text-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-section span {
+  color: #ff6600;
+}
+
+.text-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons button {
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6600;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e65c00;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #ff6600;
+  border: 1px solid #ff6600;
+}
+
+.btn-secondary:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.side-image {
+  width: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .home-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .image-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-image, .side-image {
+    max-width: 250px;
+  }
+}
