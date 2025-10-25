@@ -14,7 +14,7 @@ export default function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/pricing">Pricing</Link>
-        <Link to="/order">Order</Link>  {/* Correct Link */}
+        <Link to="/order">Order</Link>
         <Link to="/cart">Cart</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
